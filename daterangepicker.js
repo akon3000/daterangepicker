@@ -732,7 +732,7 @@
                 for (var y = minYear; y <= maxYear; y++) {
                     yearHtml += '<option value="' + y + '"' +
                         (y === currentYear ? ' selected="selected"' : '') +
-                        '>' + y + '</option>';
+                        '>' + moment.locale() === 'th' ? parseInt(y) + 543 : y + '</option>';
                 }
                 yearHtml += '</select>';
 
