@@ -1,7 +1,7 @@
 {
-  "name": "daterangepicker",
-  "version": "3.1.0",
-  "description": "Date range picker component for Bootstrap",
+  "name": "akon-daterangepicker",
+  "version": "1.0.1",
+  "description": "Fork date range picker component for Bootstrap",
   "main": "daterangepicker.js",
   "style": "daterangepicker.css",
   "scripts": {
@@ -9,18 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dangrossman/daterangepicker.git"
+    "url": "https://github.com/akon3000/daterangepicker.git"
   },
   "author": {
-    "name": "Dan Grossman",
-    "email": "dan@dangrossman.info",
-    "url": "http://www.dangrossman.info"
+    "name": "Tinnapop Suraphon",
+    "email": "tinnapop.s.ton@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dangrossman/daterangepicker/issues"
+    "url": "https://github.com/akon3000/daterangepicker/issues"
   },
-  "homepage": "https://github.com/dangrossman/daterangepicker",
+  "homepage": "https://github.com/akon3000/daterangepicker",
   "dependencies": {
     "jquery": ">=1.10",
     "moment": "^2.9.0"

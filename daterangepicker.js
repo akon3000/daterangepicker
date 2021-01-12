@@ -730,9 +730,12 @@
 
                 var yearHtml = '<select class="yearselect">';
                 for (var y = minYear; y <= maxYear; y++) {
+                    var yearLocal = moment.locale() === 'th'
+                        ? parseInt(y) + 543
+                        : y
                     yearHtml += '<option value="' + y + '"' +
                         (y === currentYear ? ' selected="selected"' : '') +
-                        '>' + moment.locale() === 'th' ? parseInt(y) + 543 : y + '</option>';
+                        '>' + yearLocal + '</option>';
                 }
                 yearHtml += '</select>';
 
