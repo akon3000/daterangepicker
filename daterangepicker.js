@@ -125,6 +125,9 @@
 
         if (typeof options.locale === 'object') {
 
+            if (typeof options.locale.language === 'string')
+                this.locale.language = options.locale.language;
+
             if (typeof options.locale.direction === 'string')
                 this.locale.direction = options.locale.direction;
 
@@ -730,7 +733,7 @@
 
                 var yearHtml = '<select class="yearselect">';
                 for (var y = minYear; y <= maxYear; y++) {
-                    var yearLocal = moment.locale() === 'th'
+                    var yearLocal = this.locale.language === 'th'
                         ? parseInt(y) + 543
                         : y
                     yearHtml += '<option value="' + y + '"' +

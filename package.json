@@ -1,6 +1,6 @@
 {
   "name": "akon-daterangepicker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fork date range picker component for Bootstrap",
   "main": "daterangepicker.js",
   "style": "daterangepicker.css",
