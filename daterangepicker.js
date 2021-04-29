@@ -10,6 +10,7 @@
     if (typeof define === 'function' && define.amd) {
         // AMD. Make globaly available as well
         define(['moment', 'jquery'], function (moment, jquery) {
+            if (typeof $ === 'function') jquery = $
             if (!jquery.fn) jquery.fn = {}; // webpack server rendering
             if (typeof moment !== 'function' && moment.hasOwnProperty('default')) moment = moment['default']
             return factory(moment, jquery);
